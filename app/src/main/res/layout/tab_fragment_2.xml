@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anonymous Post:"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_weight="0.52"
+        android:background="@drawable/back"/>
+
+    <Button
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:text="Post Message"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:clickable="false" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="334dp"
+        android:id="@+id/listView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.58"
+        android:choiceMode="multipleChoice"
+        android:visibility="visible"
+        android:touchscreenBlocksFocus="true" />
+
+</LinearLayout>
